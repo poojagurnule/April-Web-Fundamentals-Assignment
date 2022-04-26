@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Html Forms</title>
+</head>
+<body style="background-color: aqua;" >
+    
+    
+    <form>
+        <div>
+            <center><h1> Employe Registration Forms</h1></center>
+ <hr>
+        <fieldset><legend>
+            Personal information</legend>
+            <br>
+            
+
+            Login your Name:<br><br>
+        <label for="">First Name</label>
+        <input type="text" id="fname" placeholder=" eg.Pooja" size="30" required/><br><br>
+        <label for="mname">Middlename</label>
+        <input type="text" id="mname" placeholder="eg.Middlename" size="35" required/><br><br>
+        <label for="lname"> Lastname</label>
+        <input type="text" name="lastname" placeholder="eg.Lastname" size="35" required/><br><br>
+            </fieldset>
+            <br><br>
+        
+            
+            <label for=""> Department</label>
+
+            <select>
+                <option value="Course">Department</option>
+                <option value="BCA">Management</option>
+                <option value="BBA">Human Resource</option>
+                <option value="B.tech">Customer support</option>
+                <option value="MBA">Development</option>
+                <option value="MCA">Business</option>
+                <option value="B.E"> IT Department</option>
+                
+            </select>
+            </div><br>
+            <div>
+                <label>
+
+        select your Gender:
+    </label><br>
+        <input type="radio" name="gender" value="male">
+        <label > Male</label><br>
+        <input type="radio" name="gender" value="female">
+        <label > Female</label><br>
+        <input type="radio" name="gender" value="Other">
+        <label > Other</label><br>
+        <br>
+        </div>
+        <br>
+        <label for="">Phone</label>
+        <input type="text" name="country code" placeholder="Country Code" value="+91" size="2"/>
+        <input type="tel" name="phone" size="25" pattern="[0-9]{4}-[0-9]{6}" placeholder="1234-567890" required>
+        <br><br>
+        Current Address:<br><br>
+        <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+
+        </textarea><br>
+        <label for="myfile">Drop your Resume</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Retype Password" name="psw-repeat">
+        <br><br>
+        <input type="checkbox" name="" id="">
+        <label for=""> Above given details are correcr</label>
+        <br><br>
+        <button type="reset">reset</button>
+        <button type="Submit" class="Registerbtn"> Submit</button>
+        </form>
+    
+    
+    
+</body>
+</html>
