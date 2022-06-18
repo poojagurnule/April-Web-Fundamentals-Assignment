@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+
+         *{
+          margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+
+        }
+      
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(50, 104, 125);
+        }
+      
+   .container{
+    
+    margin: 100px auto;
+
+            
+   }
+
+   
+
+   
+    </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-3 mx-auto" >
+    <div class="card" style="width:22rem;"  >
+        <img  id="p1"   src="pic1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title "  id="T1" >Friends</h5>
+          <p class="card-text" id="para"> “When the world is so complicated, the simple gift of friendship is within all of our hands.” </p>
+        </div>
+        
+        <div class="card-body">
+            <button type="button" class="btn btn-info px-4 ms-5" onclick="friends()"  >Friends</button>
+            <button type="button" class="btn btn-danger px-4 me-5"  onclick="Family()">Family</button>
+
+
+
+          </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <script>
+
+        function Family(){
+          var imgChange = document.getElementById('p1');
+          if(imgChange.src.match ("pic1.jpg")){
+            imgChange.src = "pic2.jpg"
+          }
+          var textChange = document.getElementById('T1');
+           textChange.innerText = "Family"
+           T1.style.color ='red';
+
+           var textChange = document.getElementById('para');
+           textChange.innerText = "“Being a family means you are a part of something very wonderful. It means you will love and be loved for the rest of your life.”"
+           para.style.color ='black';
+
+          
+        }
+        function friends(){
+          var imgChange = document.getElementById('p1');
+          if(imgChange.src.match ("pic1.jpg")){
+            imgChange.src = "pic1.jpg"
+          }else{
+            imgChange.src = "pic1.jpg"
+          }
+          var textChange = document.getElementById('T1');
+           textChange.innerText = "Friends"
+           T1.style.color ='blue';
+
+
+
+           var textChange = document.getElementById('para');
+           textChange.innerText = " “When the world is so complicated, the simple gift of friendship is within all of our hands.” "
+           para.style.color ='black';
+
+          
+        }
+
+
+
+      </script>
+    
+</body>
+</html>
