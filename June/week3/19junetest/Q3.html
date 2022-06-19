@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!--The container where I'll add the dynamic ul and li elements.-->
+    
+        <ol id="container">
+            
+        </ol>
+
+</body>
+<script>
+    var arr = ['Delhi', 'Mumbai', 'Jaipur', 'Kolkata', 'Indore'];
+    var cont = document.getElementById('container');
+
+    // create ol element and set the attributes.
+    var ol = document.createElement('ol');
+    ol.setAttribute('style', 'padding: 0; margin: 0;');
+    ol.setAttribute('id', 'theList');
+
+    for (i = 0; i <= arr.length - 1; i++) {
+        var li = document.createElement('li');     // create li element.
+        li.innerHTML = arr[i];      // assigning text to li using array value.
+            
+
+        ol.appendChild(li);     // append li to ol.
+    }
+
+    cont.appendChild(ol);       // add list to the container.
+</script>
+</html>
