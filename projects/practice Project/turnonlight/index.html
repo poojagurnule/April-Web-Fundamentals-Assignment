@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main-heading">
+        <h1> Can you turn the light on?</h1>
+        
+        <img id="image" src="https://www.vippng.com/png/detail/355-3556539_font-light-off-comments-light-on-off-icon.png" alt="" width="150px">
+        <button id="button">Turn On</button>
+        
+    </div>
+
+
+    <script>
+  
+
+    let button = document.getElementById('button');
+
+    button.onclick = () => {
+        let image = document.getElementById('image');
+
+        if(image.getAttribute('src') == "https://www.vippng.com/png/detail/355-3556539_font-light-off-comments-light-on-off-icon.png"){
+            image.src = "https://cdn1.vectorstock.com/i/1000x1000/05/10/3d-realistic-turning-on-light-bulb-icon-vector-28050510.jpg"
+            button.innerHTML ="Turn off light"
+        }else{
+            image.src = "https://www.vippng.com/png/detail/355-3556539_font-light-off-comments-light-on-off-icon.png"
+
+            button.innerHTML = "Turn on light"
+        }
+    }
+    
+
+    
+
+
+    </script>
+    
+</body>
+</html>
